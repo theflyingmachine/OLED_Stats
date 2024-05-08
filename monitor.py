@@ -55,8 +55,8 @@ font = ImageFont.load_default()
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 # Icons website: https://icons8.com/line-awesome
-font = ImageFont.truetype('PixelOperator.ttf', 16)
-icon_font= ImageFont.truetype('lineawesome-webfont.ttf', 18)
+font = ImageFont.truetype('/root/OLED_Stats/PixelOperator.ttf', 16)
+icon_font= ImageFont.truetype('/root/OLED_Stats/lineawesome-webfont.ttf', 18)
 
 while True:
 
@@ -104,6 +104,9 @@ while True:
     # Text IP address
     draw.text((x+19, top+45), str(IP,'utf-8'),  font=font, fill=255)
     
+    draw.text((x+60, top+65), 'CYBERBOY Inc',  font=font, fill=255)    
+   
+
    # Display image.
     oled.image(image)
     oled.show()
